@@ -17,5 +17,4 @@ void main() {
   //Null Safety:
 
   String? nullableVariable = null;
-  String nonNullableVariable = "Hello";
 }
