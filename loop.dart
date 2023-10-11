@@ -34,4 +34,12 @@ void main() {
     print(i);
     i++;
   }
+  //find the factorial of a number
+  int number = 5;
+  int fact = 1;
+  while (number > 0) {
+    fact *= number;
+    number--;
+  }
+  print("Factorial: $fact");
 }
