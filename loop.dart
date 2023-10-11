@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   for (int i = 1; i < 10; i++) {
     print("dart");
@@ -42,4 +44,15 @@ void main() {
     number--;
   }
   print("Factorial: $fact");
+
+  do {
+    print(i);
+    i++; // Increment the loop variable
+  } while (i <= 5);
+
+  var input;
+  do {
+    print("Enter 'exit' to quit:");
+    input = stdin.readLineSync();
+  } while (input != 'exit');
 }
