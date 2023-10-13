@@ -68,4 +68,9 @@ void main() {
   for (int i in loopSet) {
     print(i);
   }
+  var usrMap = {"name": "Tom", 'Email': 'tom@xyz.com'};
+  usrMap.forEach((key, value) {
+    print('$key : $value');
+  });
+  usrMap.forEach((key, value) => print('${key}:${value}'));
 }
