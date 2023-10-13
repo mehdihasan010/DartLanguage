@@ -64,4 +64,8 @@ void main() {
   for (int i = 0; i <= loopList.length; i++) {
     print(i);
   }
+  var loopSet = {50, 60, 80};
+  for (int i in loopSet) {
+    print(i);
+  }
 }
