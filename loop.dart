@@ -55,4 +55,13 @@ void main() {
     print("Enter 'exit' to quit:");
     input = stdin.readLineSync();
   } while (input != 'exit');
+
+  // loop for list
+  var loopList = [10, 20, 60];
+  for (int i in loopList) {
+    print(i);
+  }
+  for (int i = 0; i <= loopList.length; i++) {
+    print(i);
+  }
 }
