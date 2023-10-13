@@ -91,15 +91,15 @@ void main() {
   };
   print(nobleGases);
 
-  /*var gifts = Map<String, String>();
-  gifts['first'] = 'partridge';
-  gifts['second'] = 'turtledoves';
-  gifts['fifth'] = 'golden rings';
+  var gift = Map<String, String>();
+  gift['first'] = 'partridge';
+  gift['second'] = 'turtledoves';
+  gift['fifth'] = 'golden rings';
 
-  var nobleGases = Map<int, String>();
-  nobleGases[2] = 'helium';
-  nobleGases[10] = 'neon';
-  nobleGases[18] = 'argon';*/
+  var nobleGasess = Map<int, String>();
+  nobleGasess[2] = 'helium';
+  nobleGasess[10] = 'neon';
+  nobleGasess[18] = 'argon';
 
   gifts['fourth'] = 'calling birds'; // Add a key-value pair
   print(gifts);
