@@ -8,7 +8,10 @@ void main() {
 }
 
 class pet {
+  //properties
   var name = 'mini';
+
+  //Methods
   void display() {
     print('Cat');
   }
