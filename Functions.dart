@@ -5,6 +5,11 @@ void main() {
   print(ansSub);
   student('emran', roll: 059, age: 27);
   student2('emran', 059);
+  // Anonymous Functions or Lambda Expression
+  Function myName = (String name) {
+    print('Name= $name');
+  };
+  myName('Emran');
 }
 
 int sum(int a, int b) {
@@ -19,7 +24,7 @@ int sub(int a, {int b = 15}) {
   return a - b;
 }
 
-//Named Parameter
+//Named Parameter use {}
 
 void student(var name, {var roll, var age}) {
   print(name);
@@ -27,7 +32,7 @@ void student(var name, {var roll, var age}) {
   print(age);
 }
 
-//Optional Positional Parameter
+//Positional Parameter use []
 
 void student2(var name, [var roll, var age]) {
   print('$name $roll $age');
