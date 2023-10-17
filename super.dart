@@ -5,6 +5,7 @@ void main() {
   var tesla = Tesla();
   tesla.display();
   Manager manager = Manager("John", 25000.0);
+  Manager2 manager2 = Manager2.manager();
 }
 
 class Laptop {
@@ -50,5 +51,20 @@ class Manager extends Employee {
   // Constructor
   Manager(String name, double salary) : super(name, salary) {
     print("Manager constructor");
+  }
+}
+
+//Super With Named Constructor
+class Employee2 {
+  // Named constructor
+  Employee2.manager() {
+    print("Employee named constructor");
+  }
+}
+
+class Manager2 extends Employee2 {
+  // Named constructor
+  Manager2.manager() : super.manager() {
+    print("Manager named constructor");
   }
 }
