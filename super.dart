@@ -4,6 +4,7 @@ void main() {
   macbook.show();
   var tesla = Tesla();
   tesla.display();
+  Manager manager = Manager("John", 25000.0);
 }
 
 class Laptop {
@@ -31,5 +32,23 @@ class Tesla extends Car {
   void display() {
     print("No of seats in Tesla: $noOfSeats");
     print("No of seats in Car: ${super.noOfSeats}");
+  }
+}
+
+//Super With Constructor
+
+class Employee {
+  // Constructor
+  Employee(String name, double salary) {
+    print("Employee constructor");
+    print("Name: $name");
+    print("Salary: $salary");
+  }
+}
+
+class Manager extends Employee {
+  // Constructor
+  Manager(String name, double salary) : super(name, salary) {
+    print("Manager constructor");
   }
 }
