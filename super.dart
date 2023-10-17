@@ -6,6 +6,8 @@ void main() {
   tesla.display();
   Manager manager = Manager("John", 25000.0);
   Manager2 manager2 = Manager2.manager();
+  var macbookpro = MacBookPro2();
+  macbookpro.display();
 }
 
 class Laptop {
@@ -66,5 +68,30 @@ class Manager2 extends Employee2 {
   // Named constructor
   Manager2.manager() : super.manager() {
     print("Manager named constructor");
+  }
+}
+
+//Super With Multilevel Inheritance
+
+class Laptop2 {
+  // Method
+  void display() {
+    print("Laptop display");
+  }
+}
+
+class MacBook2 extends Laptop2 {
+  // Method
+  void display() {
+    print("MacBook display");
+    super.display();
+  }
+}
+
+class MacBookPro2 extends MacBook2 {
+  // Method
+  void display() {
+    print("MacBookPro display");
+    super.display();
   }
 }
