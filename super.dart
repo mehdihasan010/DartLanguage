@@ -1,3 +1,11 @@
+void main() {
+  // Creating an object of the MacBook class
+  MacBook macbook = MacBook();
+  macbook.show();
+  var tesla = Tesla();
+  tesla.display();
+}
+
 class Laptop {
   // Method
   void show() {
@@ -12,8 +20,16 @@ class MacBook extends Laptop {
   }
 }
 
-void main() {
-  // Creating an object of the MacBook class
-  MacBook macbook = MacBook();
-  macbook.show();
+//Accessing Super Properties
+class Car {
+  int noOfSeats = 4;
+}
+
+class Tesla extends Car {
+  int noOfSeats = 6;
+
+  void display() {
+    print("No of seats in Tesla: $noOfSeats");
+    print("No of seats in Car: ${super.noOfSeats}");
+  }
 }
