@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 void main() {
   // Creating an object of the MacBook class
   MacBook macbook = MacBook();

@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 void main() {
   var name = "Emran"; //Type inferred as String
   final age = 25; // Final Variable (immutable)

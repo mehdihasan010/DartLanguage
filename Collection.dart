@@ -4,6 +4,8 @@
 //Set
 //Maps
 
+// ignore_for_file: unused_local_variable
+
 void main() {
   final fixedLengthList = List<int>.filled(5, 0); // Creates fixed-length list.
   print(fixedLengthList);
