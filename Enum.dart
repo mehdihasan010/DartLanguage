@@ -27,6 +27,9 @@ void main() {
       print("Today is Saturday.");
       break;
   }
+  for (days day in days.values) {
+    print(day);
+  }
 
   Person p1 = Person("John", "Doe", Gender.Male);
   p1.display();
