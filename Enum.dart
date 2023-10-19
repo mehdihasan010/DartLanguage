@@ -1,5 +1,7 @@
 enum days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }
 
+enum Gender { Male, Female, Other }
+
 void main() {
   var today = days.Friday;
   switch (today) {
@@ -24,5 +26,28 @@ void main() {
     case days.Saturday:
       print("Today is Saturday.");
       break;
+  }
+
+  Person p1 = Person("John", "Doe", Gender.Male);
+  p1.display();
+
+  Person p2 = Person("Menuka", "Sharma", Gender.Female);
+  p2.display();
+}
+
+class Person {
+  // Properties
+  String? firstName;
+  String? lastName;
+  Gender? gender;
+
+  // Constructor
+  Person(this.firstName, this.lastName, this.gender);
+
+  // display() method
+  void display() {
+    print("First Name: $firstName");
+    print("Last Name: $lastName");
+    print("Gender: $gender");
   }
 }
