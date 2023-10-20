@@ -1,23 +1,32 @@
-// abstract class as interface
-abstract class Vehicle {
-  void start();
-  void stop();
-}
-// implements interface
-class Car implements Vehicle {
-  @override
-  void start() {
-    print('Car started');
+// creating an interface using concrete class
+class Laptop {
+  // method
+  turnOn() {
+    print('Laptop turned on');
   }
 
+  // method
+  turnOff() {
+    print('Laptop turned off');
+  }
+}
+
+class MacBook implements Laptop {
+  // implementation of turnOn()
   @override
-  void stop() {
-    print('Car stopped');
+  turnOn() {
+    print('MacBook turned on');
+  }
+
+  // implementation of turnOff()
+  @override
+  turnOff() {
+    print('MacBook turned off');
   }
 }
 
 void main() {
-  var car = Car();
-  car.start();
-  car.stop();
+  var macBook = MacBook();
+  macBook.turnOn();
+  macBook.turnOff();
 }
