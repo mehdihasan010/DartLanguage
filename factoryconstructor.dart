@@ -1,26 +1,43 @@
-class Person {
-  String firstName;
-  String lastName;
+// enum ShapeType
+enum ShapeType { circle, rectangle }
 
-  // constructor
-  Person(this.firstName, this.lastName);
+// abstract class Shape
+abstract class Shape {
+  // factory constructor
+  factory Shape(ShapeType type) {
+    switch (type) {
+      case ShapeType.circle:
+        return Circle();
+      case ShapeType.rectangle:
+        return Rectangle();
+      default:
+        throw 'Invalid shape type';
+    }
+  }
+  // method
+  void draw();
+}
 
-  // factory constructor Person.fromMap
-  factory Person.fromMap(Map<String, Object> map) {
-    final firstName = map['firstName'] as String;
-    final lastName = map['lastName'] as String;
-    return Person(firstName, lastName);
+class Circle implements Shape {
+  // implement draw method
+  @override
+  void draw() {
+    print('Drawing circle');
+  }
+}
+
+class Rectangle implements Shape {
+  // implement draw method
+  @override
+  void draw() {
+    print('Drawing rectangle');
   }
 }
 
 void main() {
-  // create a person object
-  final person = Person('John', 'Doe');
-
-  // create a person object from map
-  final person2 = Person.fromMap({'firstName': 'Harry', 'lastName': 'Potter'});
-
-  // print first and last name
-  print("From normal constructor: ${person.firstName} ${person.lastName}");
-  print("From factory constructor: ${person2.firstName} ${person2.lastName}");
+  // create Shape object
+  Shape shape = Shape(ShapeType.circle);
+  Shape shape2 = Shape(ShapeType.rectangle);
+  shape.draw();
+  shape2.draw();
 }
