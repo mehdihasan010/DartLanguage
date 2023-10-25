@@ -53,5 +53,5 @@ void main() {
   // create a list of Shape objects
   var region = Region(shapes: [circle, rectangle]);
   // print the total area
-  print("Total Area of Region: ${region.totalArea}");
+  print("Total Area of Regions: ${region.totalArea}");
 }
