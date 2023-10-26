@@ -15,4 +15,7 @@ void main() {
 // Using ! operator to return null if name is null
   String name2 = name!;
   print(name2);
+  // list of nullable ints
+  List<int?> items = [1, 2, null, 4];
+  print(items);
 }
