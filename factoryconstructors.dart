@@ -84,4 +84,9 @@ void main() {
   // print first and last name
   print("From normal constructor: ${person.firstName} ${person.lastName}");
   print("From factory constructor: ${person2.firstName} ${person2.lastName}");
+  // create Shape object
+  Shape shape = Shape(ShapeType.circle);
+  Shape shape2 = Shape(ShapeType.rectangle);
+  shape.draw();
+  shape2.draw();
 }
