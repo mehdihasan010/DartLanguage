@@ -10,6 +10,7 @@ void main() {
 // display the result
   print("Result is $result");
   print("Length of result is ${result.length}");
+  printLength("Hello");
 }
 
 // method to print the length of the text
