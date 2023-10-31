@@ -9,6 +9,11 @@ void main() {
   // late variable is initialized here
   person.name = "John";
   person.greet();
+  print("Starting");
+  // late variable
+  late String value = provideCountry();
+  print("End");
+  print(value);
 }
 
 class Person {
@@ -18,4 +23,10 @@ class Person {
   void greet() {
     print("Hello $name");
   }
+}
+
+// function
+String provideCountry() {
+  print("Function is called");
+  return "USA";
 }
