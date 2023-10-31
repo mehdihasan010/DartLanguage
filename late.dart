@@ -13,6 +13,10 @@ void main() {
   late String value = provideCountry();
   print("End");
   print(value);
+  // object of Student class
+  Student student = Student("John");
+  print(student.name);
+  student.name = "Doe"; // Error
 }
 
 class Person {
@@ -35,4 +39,13 @@ class Person {
 String provideCountry() {
   print("Function is called");
   return "USA";
+}
+
+// Student class
+class Student {
+  // late final variable
+  late final String name;
+
+  // constructor
+  Student(this.name);
 }
