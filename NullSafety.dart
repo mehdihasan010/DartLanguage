@@ -22,6 +22,8 @@ void main() {
   List<int?> items = [1, 2, null, 4];
   print(items);
   printAddress(null);
+  List<String?> items2 = ["1", "2", null, "4"];
+  print(items2);
 }
 
 void printAddress(String? address) {
