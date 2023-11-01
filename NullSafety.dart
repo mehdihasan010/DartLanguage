@@ -24,8 +24,15 @@ void main() {
   printAddress(null);
   List<String?> items2 = ["1", "2", null, "4"];
   print(items2);
+  int? length = findLength("Hello");
+  print("The length of the string is $length");
 }
 
 void printAddress(String? address) {
   print(address);
+}
+
+int? findLength(String? name) {
+  // add null assertion operator here
+  return name?.length;
 }
