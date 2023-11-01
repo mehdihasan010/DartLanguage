@@ -1,4 +1,7 @@
 void main() {
+  int? age;
+  age = null;
+  print("Age is $age");
 // Declaring a nullable variable by using ?
   String? name;
 // Assigning John to name
