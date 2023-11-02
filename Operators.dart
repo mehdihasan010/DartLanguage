@@ -4,11 +4,6 @@ void main() {
   //Arithmetic Operators:
   int a = 10;
   var b = 3;
-  var sum = a + b; // 13
-  var difference = a - b; // 7
-  var product = a * b; // 30
-  var quotient = a / b; // 3.3333
-  var remainder = a % b; // 1
 
   //Comparison Operators:
   print(a == b); // false
