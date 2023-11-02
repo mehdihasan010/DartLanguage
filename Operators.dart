@@ -27,9 +27,5 @@ void main() {
   print(!isTrue); // false (negation of true is false)
 
   //Assignment Operators:
-  a += 3; // Equivalent to a = a + 3; (a is now 8)
-  a -= 2; // Equivalent to a = a - 2; (a is now 6)
-  a *= 4; // Equivalent to a = a * 4; (a is now 24)
-  //a /= 3; // Equivalent to a = a / 3; (a is now 8)
-  a %= 5; // Equivalent to a = a % 5; (a is now 3)
+ 
 }
