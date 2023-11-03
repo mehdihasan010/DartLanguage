@@ -26,7 +26,7 @@ class myPet {
 
 class Student {
   String name = "hello";
-  int age = 25;
+  int age = 10;
 
   String get stud_name {
     return name;
