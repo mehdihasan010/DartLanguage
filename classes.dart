@@ -48,3 +48,11 @@ class Student {
     return age;
   }
 }
+
+class Shape {
+  void cal_area() {
+    print("calling calc area defined in the Shape class");
+  }
+}
+
+class Circle extends Shape {}
