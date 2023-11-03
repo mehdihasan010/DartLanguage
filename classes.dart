@@ -5,6 +5,8 @@ void main() {
   var obj1 = new myPet();
   obj1.name = 'mini';
   obj1.display();
+  var obj3 = new Circle();
+  obj3.cal_area();
 }
 
 class pet {
