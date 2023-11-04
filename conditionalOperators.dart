@@ -42,4 +42,20 @@ void main() {
   }
 
   //Switch Statement:
+  String day = "Sunday";
+  switch (day) {
+    case "Monday":
+    case "Tuesday":
+    case "Wednesday":
+    case "Thursday":
+    case "Friday":
+      print("It's a weekday.");
+      break;
+    case "Saturday":
+    case "Sunday":
+      print("It's a weekend.");
+      break;
+    default:
+      print("Invalid day.");
+  }
 }
