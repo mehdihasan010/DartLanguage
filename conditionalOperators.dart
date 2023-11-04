@@ -42,7 +42,7 @@ void main() {
   }
 
   //Switch Statement:
-  String day = "Sunday";
+  String day = "Monday";
   switch (day) {
     case "Monday":
     case "Tuesday":
