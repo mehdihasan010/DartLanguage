@@ -10,12 +10,12 @@ abstract class A {
 class B extends A {
   @override
   void say() {
-    print("Yo Geek!!");
+    print("Flutter!!");
   }
 
   @override
   void write() {
-    print("Geeks For Geeks");
+    print("dart For flutter");
   }
 }
 
