@@ -19,8 +19,16 @@ class B extends A {
   }
 }
 
+class C extends B {
+  void show() {
+    print("class c");
+  }
+}
+
 main() {
-  B geek = new B();
-  geek.say();
-  geek.write();
+  B obj = new B();
+  obj.say();
+  obj.write();
+  C obj2 = new C();
+  obj2.say();
 }
