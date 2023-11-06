@@ -28,4 +28,6 @@ void main() {
   B obj = new B();
   obj.show();
   obj.mass();
+  C obj2 = new C();
+  obj2.mass();
 }
