@@ -7,13 +7,21 @@ class A {
   }
 }
 
-class B implements A {
+class C {
+  void mass() {
+    print("Class C");
+  }
+}
+
+class B implements A, C {
   int? age;
   String? Name;
   @override
   void show() {
     print("class B");
   }
+
+  void mass() {}
 }
 
 void main() {
