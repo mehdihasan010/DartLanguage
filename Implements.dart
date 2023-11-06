@@ -27,4 +27,5 @@ class B implements A, C {
 void main() {
   B obj = new B();
   obj.show();
+  obj.mass();
 }
