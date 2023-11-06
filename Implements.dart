@@ -15,3 +15,8 @@ class B implements A {
     print("class B");
   }
 }
+
+void main() {
+  B obj = new B();
+  obj.show();
+}
