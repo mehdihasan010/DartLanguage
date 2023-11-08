@@ -6,7 +6,7 @@ void main() {
   temp.celsius = 25; // Calls the setter
   print(temp.celsius); // Calls the getter: Output: 25.0
 
-  temp.celsius = -300; // Output: Invalid temperature.
+  // Output: Invalid temperature.
 }
 
 class Car {
