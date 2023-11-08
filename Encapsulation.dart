@@ -1,12 +1,18 @@
 void main() {
-  //var myCar = Car();
+  var myCar = Car();
   myCar.model = 'Toyota'; // Accessible because model is public
   myCar._engine = 'v8';
   var temp = Temperature();
   temp.celsius = 25; // Calls the setter
   print(temp.celsius); // Calls the getter: Output: 25.0
 
-  // Output: Invalid temperature.
+  temp.celsius = -300; // Output: Invalid temperature.
+}
+
+class Car {
+  late String model; // Public member
+  // ignore: unused_field
+  late String _engine;
 }
 
 class Temperature {
