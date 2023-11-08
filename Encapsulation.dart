@@ -1,5 +1,5 @@
 void main() {
-  var myCar = Car();
+  //var myCar = Car();
   myCar.model = 'Toyota'; // Accessible because model is public
   myCar._engine = 'v8';
   var temp = Temperature();
