@@ -9,12 +9,6 @@ void main() {
   // Output: Invalid temperature.
 }
 
-class Car {
-  late String model; // Public member
-  // ignore: unused_field
-  late String _engine;
-}
-
 class Temperature {
   late double _celsius;
 
