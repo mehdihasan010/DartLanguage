@@ -18,7 +18,7 @@ void main() {
       print("Today is Wednesday.");
       break;
     case days.Thursday:
-      print("Today is .");
+      print("Today is Thursday.");
       break;
     case days.Friday:
       print("Today is Friday.");
