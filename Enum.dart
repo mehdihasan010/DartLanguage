@@ -49,8 +49,8 @@ class Person {
 
   // display() method
   void display() {
-    print("First Name is: $firstName");
-    print("Last Name is: $lastName");
+    print("First Name: $firstName");
+    print("Last Name: $lastName");
     print("Gender: $gender");
   }
 }
